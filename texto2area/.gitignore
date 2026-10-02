@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+*.so
+dados/*.parquet
+reproduzir/modelo_treinado/
+reproduzir/avaliacao/
+dados/interim/
+dados/modelos/

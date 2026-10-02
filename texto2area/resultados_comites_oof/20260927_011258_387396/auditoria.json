@@ -1,0 +1,136 @@
+{
+  "inputs": {
+    "LinearSVC": {
+      "columns": [
+        "indice_parquet",
+        "fold",
+        "y_true_id",
+        "y_pred_id",
+        "y_true",
+        "y_pred"
+      ],
+      "n": 1017734,
+      "files": [
+        {
+          "path": "C:\\Users\\Mthaltomar\\Desktop\\Mestrado\\Projeto\\texto2area\\texto2area\\reproduzir\\modelo_treinado\\svc_50_kfold\\predicoes_oof.csv",
+          "sha256": "6707efefc093761bb4f8d22adf8a45da281b90b3e17f06eca74d05e37a142157"
+        }
+      ]
+    },
+    "XGBoost": {
+      "columns": [
+        "y_true_id",
+        "y_pred_id",
+        "y_true",
+        "y_pred",
+        "indice_parquet",
+        "fold"
+      ],
+      "n": 1017734,
+      "files": [
+        {
+          "path": "C:\\Users\\Mthaltomar\\Desktop\\Mestrado\\Projeto\\texto2area\\texto2area\\reproduzir\\modelo_treinado\\xgboost_50_kfold\\predicoes_oof.csv",
+          "sha256": "f29ed4577ca7319730425ed787fb776d6772cbf444dae573ffab3b56f97ee797"
+        },
+        {
+          "path": "C:\\Users\\Mthaltomar\\Desktop\\Mestrado\\Projeto\\texto2area\\texto2area\\reproduzir\\modelo_treinado\\xgboost_50_kfold\\indices_parquet.npy",
+          "sha256": "8f89c3e1d43c2a98f992c43f4a8ec464cf1846cb331902b60ad4dfd8c31b8c4a"
+        },
+        {
+          "path": "C:\\Users\\Mthaltomar\\Desktop\\Mestrado\\Projeto\\texto2area\\texto2area\\reproduzir\\modelo_treinado\\xgboost_50_kfold\\folds.npy",
+          "sha256": "bd822581178b0ab0ac37512f8b11d50a2e89d061370952514c489f2c91d092d5"
+        }
+      ]
+    },
+    "Random Forest": {
+      "columns": [
+        "indice_parquet",
+        "fold",
+        "y_true_id",
+        "y_pred_id",
+        "y_true",
+        "y_pred",
+        "confidence",
+        "correto"
+      ],
+      "n": 1017734,
+      "files": [
+        {
+          "path": "C:\\Users\\Mthaltomar\\Desktop\\Mestrado\\Projeto\\texto2area\\texto2area\\reproduzir\\modelo_treinado\\random_forest_50_kfold\\predicoes_oof.csv",
+          "sha256": "7ca6df4080bf7984692ba4a81f2d977810fb45081bd4ae8dc4b73a30ba398d73"
+        }
+      ]
+    }
+  },
+  "classes": [
+    "ADMINISTRAÇÃO PÚBLICA E DE EMPRESAS, CIÊNCIAS CONTÁBEIS E TURISMO",
+    "ANTROPOLOGIA / ARQUEOLOGIA",
+    "ARQUITETURA, URBANISMO E DESIGN",
+    "ARTES",
+    "ASTRONOMIA / FÍSICA",
+    "BIODIVERSIDADE",
+    "BIOTECNOLOGIA",
+    "CIÊNCIA DE ALIMENTOS",
+    "CIÊNCIA POLÍTICA E RELAÇÕES INTERNACIONAIS",
+    "CIÊNCIAS AGRÁRIAS I",
+    "CIÊNCIAS AMBIENTAIS",
+    "CIÊNCIAS BIOLÓGICAS I",
+    "CIÊNCIAS BIOLÓGICAS II",
+    "CIÊNCIAS BIOLÓGICAS III",
+    "CIÊNCIAS DA RELIGIÃO E TEOLOGIA",
+    "CIÊNCIAS E HUMANIDADES PARA A EDUCAÇÃO BÁSICA",
+    "COMPUTAÇÃO",
+    "COMUNICAÇÃO, INFORMAÇÃO E MUSEOLOGIA",
+    "DIREITO",
+    "ECONOMIA",
+    "EDUCAÇÃO",
+    "EDUCAÇÃO FÍSICA, FISIOTERAPIA, FONOAUDIOLOGIA E TERAPIA OCUPACIONAL",
+    "ENFERMAGEM",
+    "ENGENHARIAS I",
+    "ENGENHARIAS II",
+    "ENGENHARIAS III",
+    "ENGENHARIAS IV",
+    "ENSINO",
+    "FARMÁCIA",
+    "FILOSOFIA",
+    "GEOCIÊNCIAS",
+    "GEOGRAFIA",
+    "HISTÓRIA",
+    "INTERDISCIPLINAR",
+    "LINGUÍSTICA E LITERATURA",
+    "MATEMÁTICA / PROBABILIDADE E ESTATÍSTICA",
+    "MATERIAIS",
+    "MEDICINA I",
+    "MEDICINA II",
+    "MEDICINA III",
+    "MEDICINA VETERINÁRIA",
+    "NUTRIÇÃO",
+    "ODONTOLOGIA",
+    "PLANEJAMENTO URBANO E REGIONAL / DEMOGRAFIA",
+    "PSICOLOGIA",
+    "QUÍMICA",
+    "SAÚDE COLETIVA",
+    "SERVIÇO SOCIAL",
+    "SOCIOLOGIA",
+    "ZOOTECNIA / RECURSOS PESQUEIROS"
+  ],
+  "python": "3.12.0",
+  "numpy": "2.2.6",
+  "pandas": "3.0.5",
+  "sklearn": "1.9.1",
+  "regra_residual": [
+    "LinearSVC",
+    "XGBoost",
+    "Random Forest"
+  ],
+  "tolerancia_score": {
+    "atol": 1e-12,
+    "rtol": 0
+  },
+  "n_documentos": 1017734,
+  "limitacao": "Pesos de OOF nos demais folds têm dependência indireta do fold avaliado via treinamento dos modelos-base; não é nested CV.",
+  "folds_canonicos": {
+    "path": "C:\\Users\\Mthaltomar\\Desktop\\Mestrado\\Projeto\\texto2area\\texto2area\\reproduzir\\folds_capes_5.csv",
+    "sha256": "6d38228ad13d25b25275560146c373fa4fbebf741bfff62c7c58028a83bc3219"
+  }
+}

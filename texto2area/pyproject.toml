@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "texto2area"
+version = "0.1.1"
+description = "Classifica titulo+resumo de teses/dissertacoes brasileiras na grande area de avaliacao CAPES, a partir do texto (portugues)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Renê Rodrigues Veloso", email = "rene.veloso@unimontes.br" }]
+keywords = ["classificacao de texto", "CAPES", "grandes areas", "pos-graduacao", "PLN", "NLP", "scikit-learn", "portugues"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: Portuguese (Brazilian)",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Text Processing :: Linguistic",
+]
+dependencies = [
+  "scikit-learn==1.8.0",
+  "joblib>=1.5",
+  "numpy>=1.26,<2.3",
+  "scipy>=1.11",
+  "spacy>=3.8,<3.9",
+  "click>=8.0",      # o CLI do spaCy (spacy download) importa click; typer recente nao o puxa
+]
+
+[project.optional-dependencies]
+treino = ["pandas>=2.2", "pyarrow>=15", "pytest>=8"]   # pip install -e ".[treino]"
+
+[project.urls]
+Homepage = "https://github.com/reneveloso/texto2area"
+Repository = "https://github.com/reneveloso/texto2area"
+Issues = "https://github.com/reneveloso/texto2area/issues"
+
+# Modelo do spaCy (NAO instala via pip): apos instalar o pacote, rode
+#   python -m spacy download pt_core_news_lg
+
+[tool.setuptools]
+packages = ["texto2area"]
+
+[tool.setuptools.package-data]
+texto2area = ["data/*.joblib", "data/*.json", "data/*/*.joblib", "data/*/*.json"]

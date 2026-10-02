@@ -1,0 +1,7 @@
+# Construção do corpus (corpus/): além das dependências do pacote (pip install -e .)
+pandas>=2.2
+pyarrow>=15
+psycopg[binary]>=3.1
+langid>=1.1.6
+fasttext-wheel>=0.9.2
+# modelo spaCy: python -m spacy download pt_core_news_lg

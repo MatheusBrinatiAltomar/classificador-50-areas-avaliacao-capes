@@ -1,0 +1,37 @@
+fold,comite,modelo_decisor,n_desempates
+global,Hard Voting,LinearSVC,0
+global,Hard Voting,XGBoost,66479
+global,Hard Voting,Random Forest,0
+global,Hard Voting Ponderado,LinearSVC,0
+global,Hard Voting Ponderado,XGBoost,0
+global,Hard Voting Ponderado,Random Forest,0
+1,Hard Voting,LinearSVC,0
+1,Hard Voting,XGBoost,13207
+1,Hard Voting,Random Forest,0
+1,Hard Voting Ponderado,LinearSVC,0
+1,Hard Voting Ponderado,XGBoost,0
+1,Hard Voting Ponderado,Random Forest,0
+2,Hard Voting,LinearSVC,0
+2,Hard Voting,XGBoost,13264
+2,Hard Voting,Random Forest,0
+2,Hard Voting Ponderado,LinearSVC,0
+2,Hard Voting Ponderado,XGBoost,0
+2,Hard Voting Ponderado,Random Forest,0
+3,Hard Voting,LinearSVC,0
+3,Hard Voting,XGBoost,13250
+3,Hard Voting,Random Forest,0
+3,Hard Voting Ponderado,LinearSVC,0
+3,Hard Voting Ponderado,XGBoost,0
+3,Hard Voting Ponderado,Random Forest,0
+4,Hard Voting,LinearSVC,0
+4,Hard Voting,XGBoost,13506
+4,Hard Voting,Random Forest,0
+4,Hard Voting Ponderado,LinearSVC,0
+4,Hard Voting Ponderado,XGBoost,0
+4,Hard Voting Ponderado,Random Forest,0
+5,Hard Voting,LinearSVC,0
+5,Hard Voting,XGBoost,13252
+5,Hard Voting,Random Forest,0
+5,Hard Voting Ponderado,LinearSVC,0
+5,Hard Voting Ponderado,XGBoost,0
+5,Hard Voting Ponderado,Random Forest,0

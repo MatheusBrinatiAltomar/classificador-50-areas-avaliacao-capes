@@ -1,0 +1,5 @@
+# Só para o passo da cauda (traduzir_cauda.py): tradução en/es -> pt. GPU recomendada.
+torch
+transformers
+sentencepiece
+sacremoses
